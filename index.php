@@ -1,3 +1,37 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "sample";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+session_start();
+
+if (isset($_POST['username']) and isset($_POST['password'])){
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+  $query = "SELECT * FROM `users` WHERE username='$username' and password='$password'";
+  
+  $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
+  $count = mysqli_num_rows($result);
+  if ($count == 2){
+    $_SESSION['username'] = $username;
+  }else{
+    $fmsg = "Invalid Login Credentials.";
+  }
+}
+if (isset($_SESSION['username'])){
+$username = $_SESSION['username'];
+echo "Dashboard
+";
+echo "<a href='logout.php'>Logout</a>";
+
+}else{
+  ?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -67,11 +101,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			</div>
 			<form action="#" method="post">
 				<div class="pom-agile">
-					<input placeholder="Digital Identity (SSOID/Username)" name="Name" class="user" type="email" required="">
+					<input placeholder="SSOID/Username" name="username" class="user" type="email" required="">
 					<span class="icon1"><i class="fa fa-user" aria-hidden="true"></i></span>
 				</div>
 				<div class="pom-agile">
-					<input  placeholder="Password" name="Password" class="pass" type="password" required="">
+					<input  placeholder="Password" name="password" class="pass" type="password" required="">
 					<span class="icon2"><i class="fa fa-unlock" aria-hidden="true"></i></span>
 				</div>
 				<div class="sub-w3l">
@@ -123,3 +157,4 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 </body>
 </html>
+<?php } ?>
