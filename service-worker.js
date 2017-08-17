@@ -10,11 +10,12 @@ self.addEventListener('install', e => {
         `/styles/main.css?timestamp=${timeStamp}`,
         `/scripts/main.js?timestamp=${timeStamp}`,
         `/images/firebase-logo.png?timestamp=${timeStamp}`,
-        `/images/LOGO.jpg?timestamp=${timeStamp}`,
+        `/images/12.jpg?timestamp=${timeStamp}`,
         `/images/LOGO128.png?timestamp=${timeStamp}`,
         `/images/LOGO256.png?timestamp=${timeStamp}`,
         `/images/LOGO512.png?timestamp=${timeStamp}`,
-        `/images/profile_placeholder.png?timestamp=${timeStamp}`
+        `/dash/`,
+        `/dash/index.html`      
       ])
       .then(() => self.skipWaiting());
     })

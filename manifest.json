@@ -1,7 +1,7 @@
 {
-  "name": "E-Mitra",
+  "name": "E-Mitra | Rajasthan Government",
   "short_name": "E-Mitra",
-  "start_url": "/index.html",
+  "start_url": "/index.html?launcher=true",
   "icons" : [
   		{
   			"src" : "/images/LOGO512.png" ,

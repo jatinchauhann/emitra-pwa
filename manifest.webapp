@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "name": "E-Mitra",
   "launch_path": "/index.html",
-  "description": "E-Mitra Progressive Web Application",
+  "description": "E-Mitra PWA",
   "developer": {
     "name": "E-Mitra",
     "url": "https://jatinchauhan.in"

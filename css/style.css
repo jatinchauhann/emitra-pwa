@@ -37,7 +37,7 @@ body {
     padding-top: 2em;
 }
 .header-w3l h1 {
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     letter-spacing: 8px;
     font-weight: 500;
@@ -46,8 +46,8 @@ body {
     /*--text-shadow: 5px 3px 5px #101010;--*/
 }
 .header-w3l img {
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 }
 /*--//header--*/
 
