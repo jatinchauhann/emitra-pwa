@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "name": "E-Mitra",
+  "launch_path": "/index.html",
+  "description": "E-Mitra Progressive Web Application",
+  "developer": {
+    "name": "E-Mitra",
+    "url": "https://jatinchauhan.in"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "E-Mitra",
+      "description": "Rajasthan Government Online e-Services"
+    }
+  }
+}

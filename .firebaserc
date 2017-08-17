@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "e-mitra",
+    "stage": "emitra-320af",
+    "staging": "emitra-320af"
+  }
+}
